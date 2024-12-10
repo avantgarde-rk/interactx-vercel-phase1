@@ -1,0 +1,265 @@
+/* General Reset */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background-color: #f5f5f5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px 15px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 80px;
+    margin-right: 15px;
+}
+
+.logo span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.nav-links a.active,
+.nav-links a:hover {
+    color: #007bff;
+}
+
+.enquiry-btn {
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.enquiry-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section 
+.hero {
+    background: url('/assets/pic\ 1\ home.jpeg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+}
+
+.hero p {
+    margin: 10px 0 20px;
+    font-size: 1.2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}*/
+
+/* Section Styling */
+/* Section Styling */
+.dark-section {
+    background-color: #1e1e2d; /* Dark, elegant background color */
+    color: #ffffff; /* White text for contrast */
+    min-height: 100vh; /* Ensure the section covers the entire viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 80px; /* Adjust for fixed navbar height */
+    padding: 50px 20px;
+    box-sizing: border-box; /* Ensure padding is included in height calculation */
+    position: relative; /* Ensure layering is correct */
+    z-index: 1; /* Bring the section above any background elements */
+}
+
+/* Navbar Fix: Add space for a fixed navbar */
+body {
+    margin: 0; /* Remove default margin to avoid any spacing issues */
+    padding-top: 80px; /* Add padding equal to navbar height */
+}
+
+nav {
+    position: fixed; /* Make the navbar fixed */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Define navbar height */
+    background-color: #ffffff; /* Adjust as per your design */
+    z-index: 10; /* Ensure it stays above the content */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+}
+
+/* Content Container */
+.content-container {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Left Side Image Grid */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: 400px;
+}
+
+.mini-frame {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Right Side Text Content */
+.text-content {
+    max-width: 600px;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #ffd700; /* Accent color for the title */
+}
+
+.text-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #dcdcdc;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-grid {
+        grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+}
+
+/* About Section */
+.about-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Services Section */
+.services-section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.services-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.service-card h3 {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+}
