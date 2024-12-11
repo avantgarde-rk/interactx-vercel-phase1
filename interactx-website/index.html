@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Header Section -->
+<header id="header">
+    <div class="container">
+        <div class="logo">InteractX</div>
+        <nav id="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Request Demo</a></li>
+                <!-- <li><a href="#contact">Acheivements</a></li> -->
+                <li><a href="#contact">Modules</a></li>
+                <li><a href="#contact">Pricing</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="mobile-menu">☰</div>
+    </div>
+</header>
+
+<!-- Home Section -->
+<section id="home">
+    <div class="content">
+        <h1>InteractX</h1>
+        <p>Empowering Special Minds through VR</p>
+        <p>Interactive Skills Enhancer (ISE):   A Virtual Reality-Based Learning Tool for Children with ASD and ID</p>
+    </div>
+</section>
+
+<!-- About Me Section -->
+<section id="about">
+    <h2>About Us</h2>
+    <p>At InteractX, we believe that every child deserves a supportive and engaging learning environment.</p>
+    <p>Our mission is to create a safe, interactive, and inclusive virtual world where children can develop essential life skills, improve social interactions, and build confidence through experiential learning. By combining cutting-edge VR technology with evidence-based educational practices, we design tailored modules that make learning fun, effective, and impactful. </p>
+    <p>Our Vision:</p>
+    <p>To empower children with special needs by providing a virtual learning platform that fosters growth, independence, and self-confidence.</p>
+    <p>Our Mission:</p>
+    <p>To bridge the gap between traditional learning and modern technology by delivering immersive experiences that nurture cognitive, social, and emotional development.</p>
+</section>
+
+<section id="Pricing">
+    <h2>Pricing</h2>
+    <div class="bodycls">
+    <div class="pricing-container">
+        <div class="card" onclick="showDescription('Silver')">
+            <h2>Silver Pack</h2>
+            <p class="price">$20/month</p>
+            <button>Select</button>
+        </div>
+    
+        <div class="card" onclick="showDescription('Gold')">
+            <h2>Gold Pack</h2>
+            <p class="price">$40/month</p>
+            <button>Select</button>
+        </div>
+    
+        <div class="card" onclick="showDescription('Platinum')">
+            <h2>Platinum Pack</h2>
+            <p class="price">$60/month</p>
+            <button>Select</button>
+        </div>
+    </div>
+    </div>
+
+    
+    <div id="description" class="description-box"></div>
+</section>
+
+<section id="Modules">
+    <h2>Modules</h2>
+    <div class="bodycls">
+        <div class="pricing-container">
+            <div class="card"  >
+                <img src="images/School.jpg" class="imgwidthmodule"></img>
+            </div>
+        
+            <div class="card"  >
+                <img src="images/City.jpg" class="imgwidthmodule"></img>
+            </div>
+        
+            <div class="card"  >
+                <img src="images/Playground.jpg" class="imgwidthmodule"></img>
+            </div>
+        </div>
+        </div>
+     
+</section>
+
+
+
+<!-- Contact Section -->
+<section id="contact">
+    <h2>Request Demo</h2>
+    <p>If you would like to work together, feel free to reach out!</p>
+    <div class="contactemailmeblock"><a href="mailto:rakeshr.innovate@gmail.com?subject=Hello Rakesh&body=I would like to connect with you." class="btn">Email Me</a></div>
+
+</section>
+
+<!-- Footer Section -->
+<footer>
+    <p>&copy; 2024 InteractX. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
